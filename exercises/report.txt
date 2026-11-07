@@ -1,0 +1,6 @@
+=== SERVER FILE REPORT ===
+api-production
+worker-01
+database-01
+backup-01
+Total servers: 4
