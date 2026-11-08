@@ -10,4 +10,4 @@ for line in lines:
 with open("report.txt", "w", encoding="utf-8") as file:
     file.write("=== SERVER FILE REPORT ===\n")
     file.write(f"{content}\n")
-    file.write(f"Total servers: {content_length}\n")
+    file.write(f"Total servers: {content_l zaczynamy kolejny dzien "_ength}\n")
