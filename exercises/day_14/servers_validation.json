@@ -1,0 +1,22 @@
+[
+    {
+        "name": "api-production",
+        "cpu": 95.5,
+        "active": true
+    },
+    {
+        "name": "worker-01",
+        "cpu": "unknown",
+        "active": true
+    },
+    {
+        "name": "database-01",
+        "cpu": 150,
+        "active": true
+    },
+    {
+        "name": "backup-01",
+        "cpu": 25.0,
+        "active": false
+    }
+]
