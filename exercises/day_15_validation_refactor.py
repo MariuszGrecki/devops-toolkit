@@ -7,14 +7,17 @@ def validate_server(server):
     if not isinstance(server["active"], (bool)):
         return False
 
-    if validate_name(server["name"]) == False or validate_cpu(server["cpu"]) == False:
+    if not validate_name(server["name"]) or not validate_cpu(server["cpu"]):
         return False
 
     return True
 
 
 def validate_name(name):
-    if name == '':
+    if not isinstance(name, str):
+        return False
+
+    if not name.strip():
         return False
 
     return True
@@ -53,7 +56,7 @@ else:
             print(f"{server['name']} : VALID")
         else:
             invalid_servers.append(server)
-            print(f"{server['name']} : INVALID")
+            print(f"{server.get('name', 'UNKNOWN')} : INVALID")
 
 print(f"Valid servers: {len(valid_servers)}")
 print(f"Invalid servers: {len(invalid_servers)}")
