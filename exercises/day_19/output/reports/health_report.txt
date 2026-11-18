@@ -1,0 +1,4 @@
+=== INFRASTRUCTURE HEALTH REPORT ===
+api-production: HEALTHY
+worker-01: WARNING
+database-01: CRITICAL
